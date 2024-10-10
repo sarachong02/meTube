@@ -7,7 +7,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 ::-webkit-scrollbar {
@@ -16,7 +16,9 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(114, 113, 113);
+  /* background-color: rgb(114, 113, 113); */
+  background-color: #E5D9F2;
+  /* background-color: #d2c8fb; */
   border-radius: 10px;
   height: 200px;
 }
@@ -26,7 +28,7 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
+  background-color: #A594F9 !important;
   color: white !important;
 }
 
@@ -50,7 +52,7 @@ a {
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: left;
   cursor:pointer;
   background: transparent;
   outline: none;

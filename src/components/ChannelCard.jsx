@@ -14,17 +14,18 @@ const ChannelCard = ({channelDetail, marginTop}) => ( //marginTop as a prop can 
       width: { sx: '356px', md:'320px'},
       height:'326px',
       margin: 'auto',
+      border: '1.5px solid #d2c8fb',
       marginTop,}}>
         <Link to={`/channel/${channelDetail?.id?.channelId}`}>
-            <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center', color: '#fff'}}>
+            <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center', color: '#0A032E', alignItems:'center'}}>
                 <CardMedia 
                     image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture} 
                     alt={channelDetail?.snippet?.title}
-                    sx={{borderRadius:'50%', height: '180px', width: '180px', mb: 2, border: '1px solid #e3e3e3'}}/>
+                    sx={{borderRadius:'50%', height: '180px', width: '180px', mb: 2, border: '1px solid #BEB2FA'}}/>
 
                 <Typography variant='h6'>
                     {channelDetail?.snippet?.title}
-                    <CheckCircle sx={{fontSize: 14, color: 'grey', ml:'5px'}} />
+                    <CheckCircle sx={{fontSize: 14, color: '#785EF6', ml:'5px'}} />
                 </Typography>
                 {channelDetail?.statistics?.subscriberCount && (
                     <Typography>
