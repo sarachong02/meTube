@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { Sidebar, Videos } from './';
@@ -7,10 +7,15 @@ const Feed = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('Recommended');
   const [videos, setVideos] = useState([]);
+  const videoListRef = useRef(null); // Create a ref for the video list
 
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items));
+
+    if (videoListRef.current) {
+      videoListRef.current.scrollTo(0, 0); // Scroll to top of the video list
+    }
   },[selectedCategory]);
 
   return (
@@ -23,14 +28,12 @@ const Feed = () => {
         </Typography>
       </Box>
 
-      <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex:2}}>
+      <Box ref={videoListRef} p={2} sx={{ overflowY: 'auto', height: '90vh', flex:2, px: { xs: 1, md: 2}}}> 
         <Typography variant='h4' fontWeight='bold' mb={2} sx={{color: '#0A032E'}} ml='30px' >
           {selectedCategory} <span style={{color: '#785EF6'}}>videos</span>
         </Typography>
 
-        <Videos videos={videos}>
-
-        </Videos >
+        <Videos videos={videos}/>
       </Box>
     </Stack>
   )
