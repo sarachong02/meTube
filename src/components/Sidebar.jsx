@@ -12,7 +12,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
             <button className='category-btn' onClick= {() => setSelectedCategory(category.name)} style={{
                 background: category.name === selectedCategory ? '#785EF6': 'transparent', color: category.name === selectedCategory ? 'white' : '#0A032E'
             }} key={category.name}>
-                <span style={{color: category.name === selectedCategory ? 'white' : '#a594f9', marginRight: '15px'}}> {category.icon}</span>
+                <span style={{color: category.name === selectedCategory ? 'white' : '#785EF6', marginRight: '15px'}}> {category.icon}</span>
                 <span style={{opacity : category.name === selectedCategory ? '1' : '0.8'}}> {category.name} </span>
             </button>
         ))}
