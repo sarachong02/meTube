@@ -14,7 +14,10 @@ const Feed = () => {
       .then((data) => setVideos(data.items));
 
     if (videoListRef.current) {
-      videoListRef.current.scrollTo(0, 0); // Scroll to top of the video list
+      videoListRef.current.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Use smooth scrolling
+      });
     }
   },[selectedCategory]);
 
