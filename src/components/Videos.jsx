@@ -12,7 +12,7 @@ const Videos = ({videos, direction}) => {
           (item.id.videoId || item.id.channelId) && (
             <Box key={index}>
                 {item.id.videoId && <VideoCard video={item}/>}  {/*if this is a video, then it will have a videoID */}
-                {item.id.channelId && <ChannelCard channelDetail={item}/>}
+                {item.id.channelId && <ChannelCard channelDetail={item} border='1.5px solid #d2c8fb' backgroundColor='#d2c8fb'/>}
             </Box>
         )))}
     </Stack>

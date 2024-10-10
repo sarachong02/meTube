@@ -4,7 +4,7 @@ import { CheckCircle } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { demoProfilePicture } from '../utils/constants';
 
-const ChannelCard = ({channelDetail, marginTop}) => ( //marginTop as a prop can be used as an optional
+const ChannelCard = ({channelDetail, marginTop, border, backgroundColor}) => ( //marginTop as a prop can be used as an optional
     <Box sx={{
       boxShadow:'none', 
       borderRadius:'20px', 
@@ -14,7 +14,8 @@ const ChannelCard = ({channelDetail, marginTop}) => ( //marginTop as a prop can 
       width: { sx: '356px', md:'320px'},
       height:'326px',
       margin: 'auto',
-      border: '1.5px solid #d2c8fb',
+      backgroundColor,
+      border,
       marginTop,}}>
         <Link to={`/channel/${channelDetail?.id?.channelId}`}>
             <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center', color: '#0A032E', alignItems:'center'}}>

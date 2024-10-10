@@ -33,7 +33,7 @@ const Feed = () => {
 
       <Box ref={videoListRef} p={2} sx={{ overflowY: 'auto', height: '90vh', flex:2, px: { xs: 1, md: 2}}}> 
         <Typography variant='h4' fontWeight='bold' mb={2} sx={{color: '#0A032E'}} ml='30px' >
-          {selectedCategory} <span style={{color: '#785EF6'}}>videos</span>
+          {selectedCategory} <span style={{color: '#785EF6'}}>Videos</span>
         </Typography>
 
         <Videos videos={videos}/>
