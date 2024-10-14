@@ -13,7 +13,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png'; //create your own logo
+export const logo = "https://i.ibb.co/4VCbZQq/logo.png"; //create your own logo
+{/* <a href="https://ibb.co/vjfNxtF"><img src="https://i.ibb.co/4VCbZQq/logo.png" alt="logo" border="0" /></a> */}
+// export const logo = "/Users/sarachong/Desktop/portfolio/youtube_clone/public/logo.PNG";
 
 export const categories = [
   { name: 'Recommended', icon: <HomeIcon />, },
