@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/meTube/static/css/main.344dd403.css",
+    "main.js": "/meTube/static/js/main.2743b64c.js",
+    "reactPlayerYouTube.js": "/meTube/static/js/reactPlayerYouTube.0cdf39da.chunk.js",
+    "reactPlayerSoundCloud.js": "/meTube/static/js/reactPlayerSoundCloud.0f71d591.chunk.js",
+    "reactPlayerVimeo.js": "/meTube/static/js/reactPlayerVimeo.94eb775c.chunk.js",
+    "reactPlayerMux.js": "/meTube/static/js/reactPlayerMux.f724c21f.chunk.js",
+    "reactPlayerFacebook.js": "/meTube/static/js/reactPlayerFacebook.5b04b8b4.chunk.js",
+    "reactPlayerStreamable.js": "/meTube/static/js/reactPlayerStreamable.39d092be.chunk.js",
+    "reactPlayerWistia.js": "/meTube/static/js/reactPlayerWistia.01cf89f0.chunk.js",
+    "reactPlayerTwitch.js": "/meTube/static/js/reactPlayerTwitch.ee450336.chunk.js",
+    "reactPlayerDailyMotion.js": "/meTube/static/js/reactPlayerDailyMotion.245bb27d.chunk.js",
+    "reactPlayerMixcloud.js": "/meTube/static/js/reactPlayerMixcloud.90af8aca.chunk.js",
+    "reactPlayerVidyard.js": "/meTube/static/js/reactPlayerVidyard.1b47b6a5.chunk.js",
+    "reactPlayerKaltura.js": "/meTube/static/js/reactPlayerKaltura.9d7ec678.chunk.js",
+    "reactPlayerFilePlayer.js": "/meTube/static/js/reactPlayerFilePlayer.fbda9861.chunk.js",
+    "reactPlayerPreview.js": "/meTube/static/js/reactPlayerPreview.1529ab17.chunk.js",
+    "index.html": "/meTube/index.html",
+    "main.344dd403.css.map": "/meTube/static/css/main.344dd403.css.map",
+    "main.2743b64c.js.map": "/meTube/static/js/main.2743b64c.js.map",
+    "reactPlayerYouTube.0cdf39da.chunk.js.map": "/meTube/static/js/reactPlayerYouTube.0cdf39da.chunk.js.map",
+    "reactPlayerSoundCloud.0f71d591.chunk.js.map": "/meTube/static/js/reactPlayerSoundCloud.0f71d591.chunk.js.map",
+    "reactPlayerVimeo.94eb775c.chunk.js.map": "/meTube/static/js/reactPlayerVimeo.94eb775c.chunk.js.map",
+    "reactPlayerMux.f724c21f.chunk.js.map": "/meTube/static/js/reactPlayerMux.f724c21f.chunk.js.map",
+    "reactPlayerFacebook.5b04b8b4.chunk.js.map": "/meTube/static/js/reactPlayerFacebook.5b04b8b4.chunk.js.map",
+    "reactPlayerStreamable.39d092be.chunk.js.map": "/meTube/static/js/reactPlayerStreamable.39d092be.chunk.js.map",
+    "reactPlayerWistia.01cf89f0.chunk.js.map": "/meTube/static/js/reactPlayerWistia.01cf89f0.chunk.js.map",
+    "reactPlayerTwitch.ee450336.chunk.js.map": "/meTube/static/js/reactPlayerTwitch.ee450336.chunk.js.map",
+    "reactPlayerDailyMotion.245bb27d.chunk.js.map": "/meTube/static/js/reactPlayerDailyMotion.245bb27d.chunk.js.map",
+    "reactPlayerMixcloud.90af8aca.chunk.js.map": "/meTube/static/js/reactPlayerMixcloud.90af8aca.chunk.js.map",
+    "reactPlayerVidyard.1b47b6a5.chunk.js.map": "/meTube/static/js/reactPlayerVidyard.1b47b6a5.chunk.js.map",
+    "reactPlayerKaltura.9d7ec678.chunk.js.map": "/meTube/static/js/reactPlayerKaltura.9d7ec678.chunk.js.map",
+    "reactPlayerFilePlayer.fbda9861.chunk.js.map": "/meTube/static/js/reactPlayerFilePlayer.fbda9861.chunk.js.map",
+    "reactPlayerPreview.1529ab17.chunk.js.map": "/meTube/static/js/reactPlayerPreview.1529ab17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.344dd403.css",
+    "static/js/main.2743b64c.js"
+  ]
+}
