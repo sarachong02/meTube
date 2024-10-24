@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/meTube/static/css/main.344dd403.css",
-    "main.js": "/meTube/static/js/main.2743b64c.js",
+    "main.js": "/meTube/static/js/main.72e774a0.js",
     "reactPlayerYouTube.js": "/meTube/static/js/reactPlayerYouTube.0cdf39da.chunk.js",
     "reactPlayerSoundCloud.js": "/meTube/static/js/reactPlayerSoundCloud.0f71d591.chunk.js",
     "reactPlayerVimeo.js": "/meTube/static/js/reactPlayerVimeo.94eb775c.chunk.js",
@@ -18,7 +18,7 @@
     "reactPlayerPreview.js": "/meTube/static/js/reactPlayerPreview.1529ab17.chunk.js",
     "index.html": "/meTube/index.html",
     "main.344dd403.css.map": "/meTube/static/css/main.344dd403.css.map",
-    "main.2743b64c.js.map": "/meTube/static/js/main.2743b64c.js.map",
+    "main.72e774a0.js.map": "/meTube/static/js/main.72e774a0.js.map",
     "reactPlayerYouTube.0cdf39da.chunk.js.map": "/meTube/static/js/reactPlayerYouTube.0cdf39da.chunk.js.map",
     "reactPlayerSoundCloud.0f71d591.chunk.js.map": "/meTube/static/js/reactPlayerSoundCloud.0f71d591.chunk.js.map",
     "reactPlayerVimeo.94eb775c.chunk.js.map": "/meTube/static/js/reactPlayerVimeo.94eb775c.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.344dd403.css",
-    "static/js/main.2743b64c.js"
+    "static/js/main.72e774a0.js"
   ]
 }
