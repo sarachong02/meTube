@@ -13,12 +13,21 @@ const ChannelDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetchFromAPI(`channels?part=snippet&id=${id}`)
-      .then((data) => setChannelDetail(data?.items[0]));
+    // fetchFromAPI(`channels?part=snippet%2Cstatistics&id=${id}`)
+    //   .then((data) => {
+    //     setChannelDetail(data?.items[0])});
+
+    fetchFromAPI(`channels?part=snippet,statistics,brandingSettings&id=${id}`)
+      .then((data) => {
+        console.log('Channel Detail Data:', data); // Log channel detail data
+        setChannelDetail(data?.items ? data.items[0] : null);
+      });
 
     fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
       .then((data) => setVideos(data?.items));
   }, [id])
+
+  if (!channelDetail) return <div>Loading...</div>;
 
   return (
     <Box minHeight="95vh">

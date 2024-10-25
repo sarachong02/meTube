@@ -4,7 +4,18 @@ import { CheckCircle } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { demoProfilePicture } from '../utils/constants';
 
-const ChannelCard = ({channelDetail, marginTop, border, backgroundColor}) => ( //marginTop as a prop can be used as an optional
+const ChannelCard = ({channelDetail, marginTop, border, backgroundColor}) => { //marginTop as a prop can be used as an optional
+    console.log('ChannelCard Props:', channelDetail);
+    const channelId = channelDetail?.id?.channelId || channelDetail?.id;
+
+
+    // if (!channelDetail || !channelDetail.snippet) {
+    //     return <div>No channel details available.</div>; // Handle empty state
+    // }
+
+    // const channelLink = channelDetail?.snippet?.customUrl ? `https://www.youtube.com/@${channelDetail.snippet.customUrl.replace('@', '')}`: `https://www.youtube.com/channel/${channelDetail.id}`;
+
+    return(
     <Box sx={{
       boxShadow:'none', 
       borderRadius:'20px', 
@@ -17,11 +28,12 @@ const ChannelCard = ({channelDetail, marginTop, border, backgroundColor}) => ( /
       backgroundColor,
       border,
       marginTop,}}>
-        <Link to={`/channel/${channelDetail?.id?.channelId}`}>
+        {/* <Link to={`/channel/${channelDetail?.id?.channelId}`}> */}
+        <Link to={`/channel/${channelId || ''}`}>
             <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center', color: '#0A032E', alignItems:'center'}}>
                 <CardMedia 
                     image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture} 
-                    alt={channelDetail?.snippet?.title}
+                    alt={channelDetail[0]?.snippet?.title}
                     sx={{borderRadius:'50%', height: '180px', width: '180px', mb: 2, border: '1px solid #BEB2FA'}}/>
 
                 <Typography variant='h6'>
@@ -37,5 +49,6 @@ const ChannelCard = ({channelDetail, marginTop, border, backgroundColor}) => ( /
         </Link>
     </Box>
 )
+}
 
 export default ChannelCard

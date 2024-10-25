@@ -21,7 +21,7 @@ export const categories = [
   { name: 'Recommended', icon: <HomeIcon />, },
   { name: 'NFL', icon: <FavoriteIcon />, },
   { name: 'UI/UX', icon: <FavoriteIcon />, },
-  { name: 'Worship Music', icon: <FavoriteIcon />, },
+  { name: 'Christian Worship', icon: <FavoriteIcon />, },
   { name: 'Study and Jazz', icon: <FavoriteIcon />, },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },

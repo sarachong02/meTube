@@ -9,7 +9,7 @@ const App = () => (
     <Box sx={{backgroundColor: '#e5d9f2', height: '100vh', width: '100vw', overflowX: 'hidden', overflowY: 'auto'}}>
         <Navbar />
         <Routes>
-            <Route path="/" exact element={<Feed />}/>
+            <Route path="/meTube" exact element={<Feed />}/>
             <Route path="/video/:id" element={<VideoDetail />}/>
             <Route path="/channel/:id" element={<ChannelDetail />}/>
             <Route path="/search/:searchTerm" element={<SearchFeed />}/>
